@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class KdvTutari {
+    public static void main(String[] args){
+        double para;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Tutar:");
+        para= inp.nextInt();
+        double kdv = (para*18)/100;
+        double sonfiyat = para + kdv;
+        System.out.println("KDV'li Tutar:"+sonfiyat);
+        System.out.print("KDV Miktarı:"+kdv);
+    }
+}
